@@ -1,61 +1,55 @@
-Data Structures & Algorithms CS4343 - Homework Solutions
-This repository contains solutions to the homework questions for Data Structures & Algorithms CS4343, prepared by Tran Vinh Khiem.
+# Data Structure & Algorithm Homework
 
-Homework Overview
-1. Tower of Hanoi (Question 1)
-The classic Tower of Hanoi problem with three towers and N disks of different sizes. The objective is to move all disks from the first tower to the last using stacks, while adhering to the following constraints:
+## Homework Overview
 
-Only one disk can be moved at a time.
-A disk can be slid off the top of one tower onto another.
-A disk cannot be placed on top of a smaller disk.
-Example:
-Initial Status:
-![image](https://github.com/user-attachments/assets/e1682c71-afa6-4909-8aba-96349e08c67b)
-Finished Status:
-![image](https://github.com/user-attachments/assets/0c773a37-f66d-4ad2-9252-094ba3e992ec)
-Constraints:
-Use stacks to simulate the movement of disks.
+This repository contains solutions to several data structure and algorithm problems, including Tower of Hanoi, Browser History Management, and others. Each problem is solved using stacks, queues, and other data structures, with a focus on efficiency and clarity.
 
-2. Browser History Management (Question 2)
-This question involves simulating a browser's back and forward navigation using a stack. Implement the following functionalities:
+## Questions:
 
-visit(url): Visit a new URL.
-back(): Go back to the previous URL.
-forward(): Go forward to the next URL.
-Example:
-browser.visit("httt.uit.edu.vn");
+### 1. Tower of Hanoi
+
+In the classic problem of the Towers of Hanoi, you have 3 towers and N disks of different sizes, which can slide onto any tower. The puzzle starts with disks sorted in ascending order of size from top to bottom.
+
+**Constraints**:
+1. Only one disk can be moved at a time.
+2. A disk is slid off the top of one tower onto another tower.
+3. A disk cannot be placed on top of a smaller disk.
+
+**Objective**:
+Move the disks from the first tower to the last using Stacks.
+
+**Example**:
+![Tower of Hanoi](https://upload.wikimedia.org/wikipedia/commons/4/4f/Tower_of_Hanoi.gif)
+
+### 2. Browser History Management
+
+Simulate a browser's back and forward navigation using a stack. The following functionalities are implemented:
+
+- `visit(url)`: Visit a new URL.
+- `back()`: Go back to the previous URL.
+- `forward()`: Go forward to the next URL.
+
+**Example**:
+```cpp
 browser.visit("uit.edu.vn");
-browser.back();       // returns "httt.uit.edu.vn"
-browser.forward();    // returns "uit.edu.vn"
+browser.back();  // returns "httt.uit.edu.vn"
+browser.forward();  // returns "uit.edu.vn"
 browser.visit("daa.uit.edu.vn");
-browser.back();       // returns "uit.edu.vn"
-3. Visible People to the Right (Question 3)
-Given an array of heights, where heights[i] represents the height of the i-th person in a queue, the task is to determine how many people each person can see to their right. A person can see another if everyone in between is shorter than both of them.
+browser.back();  // returns "uit.edu.vn"
+```
+### 3. Visible People in Queue
+   
+Given an array heights, where heights[i] represents the height of the i-th person, determine how many people each person can see to their right. A person can see another if everyone in between is shorter than both of them.
 
-Example 1:
-Input: heights = [10, 6, 8, 5, 11, 9]
-Output: [3, 1, 2, 1, 0]
-Example 2:
-Input: heights = [5, 1, 2, 3, 10]
-Output: [4, 1, 1, 1, 0]
-Constraints:
-1 ≤ heights.length ≤ 10^5
-1 ≤ heights[i] ≤ 10^5
-All values of heights are unique.
-4. Minimum Coins to Buy Fruits (Question 4)
-In a fruit market, each fruit has a price. The market offers an incentive: if you buy the i-th fruit, you can obtain any number of the subsequent fruits for free. The objective is to determine the minimum coins necessary to buy all the fruits.
+Example:
+```cpp
+Input: heights = [10,6,8,5,11,9]
+Output: [3,1,2,1,0]
+```
+### 4. Minimum Coins for Fruits
 
-Example 1:
-Input: prices = [3, 1, 2]
+Given an integer array prices where prices[i] represents the number of coins required to buy the i-th fruit, determine the minimum number of coins necessary to obtain all the fruits with the market's incentive structure.
+```cpp
+Input: prices = [3,1,2]
 Output: 4
-Example 2:
-Input: prices = [1, 10, 1, 1]
-Output: 2
-Example 3:
-Input: prices = [26, 18, 6, 12, 49, 7, 45, 45]
-Output: 39
-Constraints:
-1 ≤ prices.length ≤ 1000
-1 ≤ prices[i] ≤ 10
-
-
+```
