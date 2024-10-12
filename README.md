@@ -10,9 +10,12 @@ A disk can be slid off the top of one tower onto another.
 A disk cannot be placed on top of a smaller disk.
 Example:
 Initial Status:
+![image](https://github.com/user-attachments/assets/e1682c71-afa6-4909-8aba-96349e08c67b)
 Finished Status:
+![image](https://github.com/user-attachments/assets/0c773a37-f66d-4ad2-9252-094ba3e992ec)
 Constraints:
 Use stacks to simulate the movement of disks.
+
 2. Browser History Management (Question 2)
 This question involves simulating a browser's back and forward navigation using a stack. Implement the following functionalities:
 
@@ -20,8 +23,6 @@ visit(url): Visit a new URL.
 back(): Go back to the previous URL.
 forward(): Go forward to the next URL.
 Example:
-cpp
-Sao chép mã
 browser.visit("httt.uit.edu.vn");
 browser.visit("uit.edu.vn");
 browser.back();       // returns "httt.uit.edu.vn"
@@ -56,20 +57,5 @@ Output: 39
 Constraints:
 1 ≤ prices.length ≤ 1000
 1 ≤ prices[i] ≤ 10
-Getting Started
-Clone the repository:
 
-bash
-Sao chép mã
-git clone https://github.com/yourusername/cs4343-homework.git
-cd cs4343-homework
-Compile and run the solutions for each problem:
 
-bash
-Sao chép mã
-g++ question1.cpp -o question1
-./question1
-Contributors
-Your Name - Initial work
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
